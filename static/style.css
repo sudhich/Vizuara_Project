@@ -1,0 +1,133 @@
+/* Reset some default styles for better consistency */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set a background color and text color for the body */
+body {
+    background-color: #f0f0f0;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+/* Style the header with a background color, text color, and padding */
+header {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Style the navigation menu */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+/* Add some padding and center content in the main section */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Style the footer with a background color and text color */
+footer {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Style form elements (customize further as needed) */
+form {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form .form-group {
+    margin-bottom: 15px;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="file"],
+form button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* Add a bit of spacing around form elements */
+form button {
+    background-color: #007BFF;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Style error message (customize further as needed) */
+.error-message {
+    color: #ff0000;
+}
+
+/* Style success message (customize further as needed) */
+.success-message {
+    color: #008000;
+}
+
+/* Style the introduction text */
+.intro-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #007BFF; /* Blue color */
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Add a subtle background behind the text */
+.intro-container {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Center-align the navigation menu */
+.centered-menu {
+    text-align: center;
+}
+
+.centered-menu ul {
+    display: inline-block;
+    padding: 0;
+}
+
+.centered-menu ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.centered-menu ul li:last-child {
+    margin-right: 0;
+}
+
+

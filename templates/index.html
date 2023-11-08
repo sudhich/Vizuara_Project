@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Flask Project</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Your Vizuara Project</h1>
+    </header>
+    <nav class="centered-menu">
+    <ul>
+        <li><a href="{{ url_for('load_data') }}">Load Data</a></li>
+        <li><a href="{{ url_for('train_data') }}">Train Data</a></li>
+        <li><a href="{{ url_for('predict_data') }}">Predict Data</a></li>
+    </ul>
+    </nav>
+
+    <main>
+        <div class="intro-container">
+           <p class="intro-text">Welcome to the Heart of Your Project! Explore the Possibilities with Our Intuitive Navigation Menu.</p>
+        </div>
+  </main>
+    <footer>
+        <p>&copy; {{ current_year }} Sudhiram Chauhan</p>
+    </footer>
+</body>
+</html>

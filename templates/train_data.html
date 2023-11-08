@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train Data</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Train Data</h1>
+    </header>
+    <nav class="centered-menu">
+        <ul>
+            <li><a href="{{ url_for('index') }}">Home</a></li>
+            <li><a href="{{ url_for('load_data') }}">Load Data</a></li>
+            <li><a href="{{ url_for('predict_data') }}">Predict Data</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <p>This is the "Train Data" page of your Flask project. You can implement data training functionality here.</p>
+
+        <!-- Add your model training form or content here -->
+        <form method="POST" action="/train_data">
+            <div class="form-group">
+                <label for="model_parameters">Model Parameters:</label>
+                <input type="text" id="model_parameters" name="model_parameters" placeholder="e.g., epochs, learning rate, etc.">
+            </div>
+            <!-- Add more fields as needed -->
+
+            <button type="submit">Start Training</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; {{ current_year }} Sudhiram Chauhan</p>
+    </footer>
+</body>
+</html>

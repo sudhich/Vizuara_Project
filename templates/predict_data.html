@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Predict Data</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Predict Data</h1>
+
+    <p>Upload data for prediction:</p>
+
+    <!-- Create a form for uploading data to predict -->
+    <form method="POST" action="/predict_data" enctype="multipart/form-data">
+        <div class="form-group">
+            <label for="data_to_predict">Upload Data File:</label>
+            <input type="file" name="data_to_predict" id="data_to_predict">
+        </div>
+        <!-- Add more fields as needed -->
+
+        <button type="submit">Predict</button>
+    </form>
+
+</body>
+</html>

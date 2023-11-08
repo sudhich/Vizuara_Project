@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Load Data</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Load Data</h1>
+    </header>
+    <nav class="centered-menu">
+    <ul>
+        <li><a href="{{ url_for('index') }}">Home</a></li>
+        <li><a href="{{ url_for('train_data') }}">Train Data</a></li>
+        <li><a href="{{ url_for('predict_data') }}">Predict Data</a></li>
+    </ul>
+    </nav>
+
+    <main>
+        <div class="intro-container">
+           <p class="intro-text">"Welcome to the 'Load Data' Hub 📂✨. Get ready to unleash the power of data! This is the place where you can bring your data to life."</p>
+        </div>
+
+        <!-- Add your data loading form or content here -->
+        <form method="POST" action="/success">
+            <div class="form-group">
+                <label for="data_upload">Upload Data File</label>
+                <input type="file" name="data_upload" id="data_upload">
+            </div>
+            <button type="submit">Upload Data</button>
+        </form>
+
+    </main>
+    <footer>
+        <p>&copy; {{ current_year }} Sudhiram Chauhan</p>
+    </footer>
+</body>
+</html>
